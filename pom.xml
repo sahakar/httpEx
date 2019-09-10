@@ -37,7 +37,7 @@
 						<username>sahakarsoft</username>
 						<password>Sahakarsoft1</password>
 						<applicationName>httpEx</applicationName>
-						<environment>sandbox</environment>
+						<environment>Development</environment>
 						<workerType>micro</workerType>
 						<workers>1</workers>
 					</cloudHubDeployment>
