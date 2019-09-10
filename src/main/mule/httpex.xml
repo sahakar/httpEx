@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="26112320-3594-477c-be0b-94531ce1ce53" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="httpexFlow" doc:id="ca0a2099-35fa-4d6b-b456-79db9645b7ce" >
+		<http:listener doc:name="Listener" doc:id="3ff7d0a1-9751-42ac-bad1-1e8185e21e7a" config-ref="HTTP_Listener_config" path="/httpEx"/>
+		<logger level="INFO" doc:name="Logger" doc:id="765387e8-a659-4a0d-bbef-3b2210332f07" message="Request recieved to the http listener"/>
+		<set-payload value="httpEx project succeded" doc:name="Set Payload" doc:id="2d7a8b5a-47a1-49ac-bc9b-fe074ea89db0" />
+	</flow>
+</mule>
