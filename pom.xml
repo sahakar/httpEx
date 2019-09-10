@@ -33,7 +33,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com/</uri>
-						<muleVersion>mule-version</muleVersion>
+						<muleVersion>${app.runtime}</muleVersion>
 						<username>sahakarsoft</username>
 						<password>Sahakarsoft1</password>
 						<applicationName>httpEx</applicationName>
